@@ -1,0 +1,19 @@
+venom = 0
+def awmth():
+    a = int(input("Введите ширину: "))
+    b = int(input("Введите высоту: "))
+    global venom
+    venom = a*b
+def happy():
+    c = int(input("Введите основание: "))
+    d = int(input("Введите высоту: "))
+    global venom
+    venom = 0.5 * c * d
+figure = input("1-прямоугольник, 2-треугольник: ")
+if figure == '1':
+    awmth()
+elif figure == '2':
+    happy()
+else:
+    print("Неизвестная фигура")
+print("Площадь: =", venom)
